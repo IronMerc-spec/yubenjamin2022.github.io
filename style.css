@@ -57,7 +57,7 @@ nav{
 .container {
     display: flex;
     flex-direction: row;
-    max-width: 1200px;
+    max-width: 1350px;
     scale:1;
     border-radius: 5px;
     overflow: hidden;
