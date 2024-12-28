@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+}
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main{
+    margin-top: 50px;
+    width: 90%;
+    
+    position: relative;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: aliceblue;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    scale:1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 50px;
+  }
+
+  
+  .left-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; /* Center align image and buttons */
+  }
+
+  .image {
+    width: 300px;  /* Fixed width for the image */
+    height: 300px;  /* Fixed height for the image */
+    object-fit: cover;
+    
+}
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: #dbdbdb;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+
+  .btn img {
+    width: 30px;  /* Shrink the width */
+    height: auto; /* Keep aspect ratio */
+}
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .content {
+    flex: 2;
+    flex-direction: row;
+    padding: 50px;
+    margin-top:50px;
+    text-align: left;
+  }
+
+  .content p{
+    margin: 10px 0 10px;
+  }
+
+  .content h1{
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive title font size */
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .content ul{
+    font-size: clamp(1rem, 1.5vw, 1.2rem); /* Responsive text font size */
+    color: #666;
+    padding-left: 20px;
+  }
+
+
+  .left-section h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive title font size */
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem); /* Responsive text font size */
+    color: #666;
+  }
+  
+  .title h1{
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive title font size */
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .title p{
+    margin-top: 10px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem); /* Responsive text font size */
+    color: #666;
+    font:size 8px;
+  }
+
+  /* Media Queries for Smaller Screens */
+  @media (max-width: 1000px) {
+    .container {
+      flex-direction: column; /* Stack image and text vertically */
+      margin-right:50px;
+    }
+  
+    .content {
+      text-align: center; /* Center align text for smaller screens */
+    }
+  
+    .left-section h1 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem); /* Slightly smaller on small screens */
+    }
+
+    .title h1 {
+        font-size: clamp(1.5rem, 3vw, 2.5rem); /* Slightly smaller on small screens */
+      }
+  
+    .content p {
+      font-size: clamp(1rem, 3vw, 1.2rem);
+    }
+
+    .content ul {
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+      }
+
+    .title p {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        margin-bottom: 50px;
+      }
+}
